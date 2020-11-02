@@ -22,7 +22,7 @@ as arguments, returned as return values, and created at runtime.
 Common Lisp
 为现代语言中常见的大多数数据类型都提供了内置支持：数字（整数、浮点数和复数）、字符 、字符串、数组（包括多维数组）、列表、哈希表、输入和输出流以及一种可移植地表示文件名的抽象。函数在
 Lisp
-中也是第一类（fist-class）数据类型。它们可以被保存在变量中，可以作为实参传递，也可以作为返回值返回以及在运行期创建。
+中也是第一类（first-class）数据类型。它们可以被保存在变量中，可以作为实参传递，也可以作为返回值返回以及在运行期创建。
 
 And these built-in types are just the beginning. They're defined in
 the language standard so programmers can count on them being available

@@ -1,6 +1,6 @@
 <!DOCTYPE html
   SYSTEM "about:legacy-compat">
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2019"><meta name="DC.rights.owner" content="(C) Copyright 2019"><meta name="DC.type" content="topic"><meta name="DC.relation" scheme="URI" content="../chap14/files-and-file-io.html"><meta name="DC.relation" scheme="URI" content="../chap14/how-we-got-here.html"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="filenames文件名"><link rel="stylesheet" type="text/css" href="../commonltr.css"><title>Filenames（文件名）</title></head><body id="filenames文件名"><main role="main"><article role="article" aria-labelledby="ariaid-title1"><h1 class="title topictitle1" id="ariaid-title1">Filenames（文件名）</h1><div class="body"><p class="p">So far you've used strings to represent filenames. However, using
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2020"><meta name="DC.rights.owner" content="(C) Copyright 2020"><meta name="DC.type" content="topic"><meta name="DC.relation" scheme="URI" content="../chap14/files-and-file-io.html"><meta name="DC.relation" scheme="URI" content="../chap14/how-we-got-here.html"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="filenames文件名"><link rel="stylesheet" type="text/css" href="../commonltr.css"><title>Filenames（文件名）</title></head><body id="filenames文件名"><main role="main"><article role="article" aria-labelledby="ariaid-title1"><h1 class="title topictitle1" id="ariaid-title1">Filenames（文件名）</h1><div class="body"><p class="p">So far you've used strings to represent filenames. However, using
 strings as filenames ties your code to a particular operating system
 and file system. Likewise, if you programmatically construct names
 according to the rules of a particular naming scheme (separating
@@ -38,7 +38,7 @@ referred to as pathname designators. All the built-in functions that
 expect a filename argument accept all three types of pathname
 designator. For instance, all the places in the previous section where
 you used a string to represent a filename, you could also have passed
-a pathname object or a stream.</p><p class="p">在多数使用文件名的调用场合里，你都可以同时使用个名字字符串或是路径名。具体使用哪一个在很大程度上取决于该名字的来源。由用户提供的文件名（例如作为参数或是配置文件中的值）通常是名字字符串，因为用户只知道它们所运行的文件系统而不关心
+a pathname object or a stream.</p><p class="p">在多数使用文件名的调用场合里，你都可以同时使用名字字符串或是路径名。具体使用哪一个在很大程度上取决于该名字的来源。由用户提供的文件名（例如作为参数或是配置文件中的值）通常是名字字符串，因为用户只知道它们所运行的文件系统而不关心
 Lisp 表示文件名的细节。但通过编程方法产生的文件名是路径名，因为你能可移植地创建它们。一个由
 <strong class="ph b">OPEN</strong> 返回的流也代表文件名，也就是那个当初用来打开该流的文件名。这三种类型的文件名被总称为路径名描述符（pathname
 designator）。所有内置的以文件名作为参数的函数都能接受所有这三种路径名描述符。例如，前面章节里所有的用字符串来表示文件名的位置都同样可以传入路径名对象或流。</p></div><nav role="navigation" class="related-links"><ul class="ullinks"><li class="link ulchildlink"><strong><a href="../chap14/how-we-got-here.html">How We Got Here（进化历程）</a></strong><br></li></ul><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../chap14/files-and-file-io.html">Files and File I/O（文件和文件 I/O）</a></div></div></nav></article></main></body></html>

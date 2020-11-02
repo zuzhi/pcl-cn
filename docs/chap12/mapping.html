@@ -1,6 +1,6 @@
 <!DOCTYPE html
   SYSTEM "about:legacy-compat">
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2019"><meta name="DC.rights.owner" content="(C) Copyright 2019"><meta name="DC.type" content="topic"><meta name="DC.relation" scheme="URI" content="../chap12/list-processing.html"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="mapping映射"><link rel="stylesheet" type="text/css" href="../commonltr.css"><title>Mapping（映射）</title></head><body id="mapping映射"><main role="main"><article role="article" aria-labelledby="ariaid-title1"><h1 class="title topictitle1" id="ariaid-title1">Mapping（映射）</h1><div class="body"><p class="p">Another important aspect of the functional style is the use of
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2020"><meta name="DC.rights.owner" content="(C) Copyright 2020"><meta name="DC.type" content="topic"><meta name="DC.relation" scheme="URI" content="../chap12/list-processing.html"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="mapping映射"><link rel="stylesheet" type="text/css" href="../commonltr.css"><title>Mapping（映射）</title></head><body id="mapping映射"><main role="main"><article role="article" aria-labelledby="ariaid-title1"><h1 class="title topictitle1" id="ariaid-title1">Mapping（映射）</h1><div class="body"><p class="p">Another important aspect of the functional style is the use of
 higher-order functions, functions that take other functions as
 arguments or return functions as values. You saw several examples of
 higher-order functions, such as <strong class="ph b">MAP</strong>, in the previous chapter. Although
@@ -21,7 +21,7 @@ successive elements of the list arguments, taking one element from
 each list per application of the function. The results of each
 function call are collected into a new list. For example:</p><p class="p"><strong class="ph b">MAPCAR</strong> 是最接近 <strong class="ph b">MAP</strong>
 的函数。因为它总是返回一个列表，所以它并不要求 <strong class="ph b">MAP</strong>
-所要求的结果类型实参。替代，它的第一个参数是想要应用的函数，而后续参数是其元素将为该函数提供实参的列表。除此之外，它和
+所要求的结果类型实参。作为替代，它的第一个参数是想要应用的函数，而后续参数是其元素将为该函数提供实参的列表。除此之外，它和
 <strong class="ph b">MAP</strong> 的行为相同：函数被应用在列表实参的相继元素上，每次函数的应用会从每个列表中各接受一个元素。每次函数调用的结果都被收集到一个新列表中。例如：</p><pre class="pre codeblock lisp"><code>(mapcar #'(lambda (x) (* 2 x)) (list 1 2 3)) ==&gt; (2 4 6)
 (mapcar #'+ (list 1 2 3) (list 10 20 30)) ==&gt; (11 22 33)</code></pre><p class="p"><strong class="ph b">MAPLIST</strong> is just like <strong class="ph b">MAPCAR</strong> except instead of passing the elements of
 the list to the function, it passes the actual cons cells. Thus, the

@@ -140,7 +140,7 @@ second-to-last argument while the rest of the values are moved one to
 the left. The original value of the first argument is simply
 returned. Thus, the following:
 
-**SHIFTF** 与之相似，除了它将值向左侧移动而不是旋转它们——最后一个参数提供了一个值用来移动到最数第二个参数上，而其他的值将向左移动一个，第一个参数
+**SHIFTF** 与之相似，除了它将值向左侧移动而不是旋转它们——最后一个参数提供了一个值用来移动到倒数第二个参数上，而其他的值将向左移动一个，第一个参数
 的最初的值将被简单地返回。这样，下面的表达式
 
 ```lisp
